@@ -7,34 +7,46 @@ Ví dụ:
 public class Flower(){
 String color;
 String name;
+
 public void setColor(String color){
 		this.color= color;
 }
+
 public String getColor(){
 	return color;
 }
+
 public void setName(String name){
 		this.name= name;
 }
+
 public String getName(){
 	return name;
 }
+
 public Flower(){}
+
 public Flower(String name, String color){
 this.name=name;
 this.color=color;
 }
 public String toString(){
+
 System.out.println(this.name + “has ” +this.color+ ”color”);
+
 }
 }
 
 public class Rose extends Flower(){
+
 public Rose(String name, String color){
 super(name,color);
+
 }
 public void display(){
+
 System.out.println(toString());
+
 }}
 Như ví dụ ở trên, lớp Rose kế thừa lớp Flower. Bởi vì lớp Rose nó cũng có các thuộc tính như là name, color. Vì vậy nó không cần phải tạo ra thêm các thuộc tính đó lần nữa, thay vào đó chỉ cần kế thừa từ lớp cha có sẵn.
 2.	Tính trừu tượng:
@@ -47,6 +59,7 @@ class Dog extends Animals(){
 		void run(){
 		System.out.println(“running danger”);
 }
+
 public static void main(String args[]) {  
         Animals ani = new Dog();  
         ani.run();  
